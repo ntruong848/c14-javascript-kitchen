@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Recipe</title>
+        <style>
+          body {
+            margin: 0;
+            font-family: sans-serif;
+          }
+          input, button, img {
+            margin: 0.25em;
+            display: block
+          }
+          img {
+            width: 4em;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>Swap image</h1>
+        <p>You can change the source of an image to by setting the "src" attribute on the element in JavaScript.</p>      
+        <p>Add a click handler to the image element that swaps the src to "burger-close.svg".</p>      
+        <img id="burgerButton" src="burger-open.svg" />
+
+        <a href="reference.html">Peek at an answer</a>
+        <script>
+          document.getElementById('burgerButton').addEventListener('click', () => {
+            document.getElementById('burgerButton').src = 'burger-close.svg'
+          })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Initial scroll</title>
+        <style>
+          html {
+            scroll-behavior: smooth;
+          }
+          body {
+            margin: 0;
+            font-family: sans-serif;
+          }
+          section {
+            background-color: aliceblue;
+            padding: 1em;
+            min-height: 100vh;
+          }
+        </style>
+    </head>
+    <body>
+      <section id="section1">
+        <h2>Section 1</h2>
+        <p>You may want to scroll your page using javascript.</p>
+        <p>There are several different scrolling methods including calling "scrollTo" on the element (or documentElement) that you wish to scroll, another method is to target the element you want to come into view and call "scrollIntoView".</p>
+        <p>A robust approach is to calculate the scroll position you want by using the "offsetTop" property on the element you want to come into view and call the global function "scroll" with that value as the new top.</p>
+        <p>Add javacsript to the "Scroll" buttons to accomplish scrolling between the two sections of this page.</p>
+        <button id="scrollTo2">scroll to section 2</button>
+
+        <a href="reference.html">Peek at an answer</a>
+      </section>
+      <section id="section2">
+        <h2>Section 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit risus arcu, non malesuada nunc condimentum sed. Etiam porttitor consectetur ipsum vel convallis. Vestibulum sodales velit dolor, eget ultricies ante varius sed. Vivamus nec orci odio. Fusce vehicula ac risus nec faucibus. Nullam nec augue nulla. Praesent porttitor, magna a lobortis consequat, erat est pretium justo, ac mollis turpis mauris dapibus arcu. Vivamus sagittis, est nec tincidunt malesuada, magna sapien commodo augue, molestie cursus enim diam eu nunc. Phasellus non finibus justo, ac laoreet ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <button id="scrollTo1">Scroll back to section 1</button>
+      </section> 
+      <script>
+
+      </script>
+    </body>
+</html>

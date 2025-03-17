@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Shrink the logo</title>
+        <style>
+          html {
+            scroll-behavior: smooth;
+          }
+          body {
+            margin: 0;
+            font-family: sans-serif;
+          }
+          header {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 0.25em;
+          }
+          section {
+            background-color: aliceblue;
+            padding: 1em;
+            min-height: 100vh;
+          }
+          .logo {
+            height: 4em;
+            transition: height 0.25s;
+          }
+          .logo-shrunk {
+            height: 2em;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+          <img id="headerLogo" class="logo" src="icons8-logo-96.png" />
+        </header>
+        <section id="section1">
+          <h2>Section 1</h2>
+          <p>You may want to react to scroll changes on your page to change the size and position of elements</p>
+          <p>A simple way to do this is to listen to the "scroll" event on the document and use the window.scrollY property to decide what to do.</p>
+          <p>To shrink a logo, you can add a style to the classlist of your logo element that changes the height.</p>
+          <p>Put these concepts together to shrink the logo whenever the user scrolls more than 50 pixels into the page.</p>
+          <a href="reference.html">Peek at an answer</a>
+        </section>
+        <section id="section2">
+          <h2>Section 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit risus arcu, non malesuada nunc condimentum sed. Etiam porttitor consectetur ipsum vel convallis. Vestibulum sodales velit dolor, eget ultricies ante varius sed. Vivamus nec orci odio. Fusce vehicula ac risus nec faucibus. Nullam nec augue nulla. Praesent porttitor, magna a lobortis consequat, erat est pretium justo, ac mollis turpis mauris dapibus arcu. Vivamus sagittis, est nec tincidunt malesuada, magna sapien commodo augue, molestie cursus enim diam eu nunc. Phasellus non finibus justo, ac laoreet ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </section>
+        <section id="section3">
+          <h2>Section 3</h2>
+          <p>Vestibulum scelerisque elit non mauris gravida tincidunt. Proin efficitur, sapien et pretium finibus, ex nisi dapibus purus, non accumsan ante metus vitae lorem. Suspendisse lobortis congue est, eget accumsan mi mollis non. Nulla rutrum, magna id aliquam eleifend, mi justo hendrerit elit, eu vulputate dolor urna ut arcu. Suspendisse non felis faucibus, maximus mi vel, fringilla lectus. Aliquam pharetra leo quis dolor blandit pretium. Donec fermentum ipsum non massa volutpat, non vulputate lorem bibendum. Morbi vehicula laoreet sodales. Duis at commodo felis. Suspendisse eu sollicitudin nulla. Nam sapien sem, facilisis ut dui et, egestas finibus mi. Sed pharetra cursus vulputate. Duis dapibus orci augue, sed facilisis eros rhoncus non.</p>  
+        </section>
+        <section id="section4">
+          <h2>Section 3</h2>
+          <p>In feugiat justo vel arcu iaculis, et scelerisque ipsum vestibulum. Ut quis dui a leo porttitor tincidunt vitae dignissim nisl. Vestibulum massa felis, porttitor ac felis pharetra, molestie consequat enim. Quisque vulputate urna vitae sapien sollicitudin, a malesuada arcu vehicula. Aliquam sed metus aliquet, suscipit orci id, placerat est. Nullam tempus, nisi a tincidunt volutpat, nibh lorem feugiat nibh, ornare aliquam nisi arcu sit amet metus. In eu nisi feugiat, bibendum nisl eu, rhoncus dui. Nunc sed ultricies arcu. Suspendisse dignissim velit est, vitae malesuada urna pulvinar in. Aliquam viverra purus vel nunc lacinia, non varius nisi vestibulum. Vestibulum gravida ligula et lorem ultricies cursus. Aenean finibus mollis velit nec mattis. Maecenas nulla sapien, tristique vitae justo at, maximus maximus velit. Integer pharetra ut ipsum non maximus. Curabitur gravida ac lectus sit amet aliquet. Fusce sit amet purus sed arcu lacinia iaculis tempor eu sem.</p> 
+          <p>Pellentesque arcu lorem, sagittis eu congue sed, tempus a ipsum. Donec pulvinar arcu ac ex aliquam semper. Praesent aliquet non nisl a efficitur. Ut at ultricies massa. Donec consectetur ullamcorper purus, vitae rutrum ante consectetur ut. Praesent elementum, diam eget gravida semper, dolor dui rhoncus orci, quis sodales quam justo a arcu. Integer rutrum, erat quis sagittis luctus, nisl libero convallis est, nec sodales mauris quam quis neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus nibh, cursus vel tincidunt at, consequat nec eros. Donec a nisl eu massa mattis vestibulum. Vivamus auctor ipsum quam, sit amet aliquet est hendrerit a. Fusce semper imperdiet sem vitae dignissim. Cras feugiat odio vitae elit accumsan, ut tincidunt leo mollis. Etiam sit amet porttitor leo. Sed malesuada, metus ac gravida sodales, nibh nunc mattis sapien, sit amet porta velit nisl eget tortor.</p>
+        </section>
+        <section id="section5">
+          <h2>Section 5</h2>
+          <p>Pellentesque arcu lorem, sagittis eu congue sed, tempus a ipsum. Donec pulvinar arcu ac ex aliquam semper. Praesent aliquet non nisl a efficitur. Ut at ultricies massa. Donec consectetur ullamcorper purus, vitae rutrum ante consectetur ut. Praesent elementum, diam eget gravida semper, dolor dui rhoncus orci, quis sodales quam justo a arcu. Integer rutrum, erat quis sagittis luctus, nisl libero convallis est, nec sodales mauris quam quis neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus nibh, cursus vel tincidunt at, consequat nec eros. Donec a nisl eu massa mattis vestibulum. Vivamus auctor ipsum quam, sit amet aliquet est hendrerit a. Fusce semper imperdiet sem vitae dignissim. Cras feugiat odio vitae elit accumsan, ut tincidunt leo mollis. Etiam sit amet porttitor leo. Sed malesuada, metus ac gravida sodales, nibh nunc mattis sapien, sit amet porta velit nisl eget tortor.</p>
+        </section>  
+        <script>
+          document.addEventListener('scroll', (e) => {
+            if (window.scrollY > 50) {
+              document.getElementById('headerLogo').classList.add('logo-shrunk')
+            }
+            else {
+              document.getElementById('headerLogo').classList.remove('logo-shrunk')
+            }
+          })
+        </script>
+    </body>
+</html>
