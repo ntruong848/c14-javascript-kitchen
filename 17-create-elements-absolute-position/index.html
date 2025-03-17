@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Wish upon a star</title>
+        <style>
+          body {
+            margin: 0;
+            font-family: sans-serif;
+          }
+          input, button {
+            margin: 0.25em;
+            display: block
+          }
+          #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100dvw;
+            height: 100dvh;
+            z-index: -1;
+          }
+          #background img {
+            width: 2em;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="background"></div>
+        <h2>Creating elements with absolute position</h2>
+        <p>We can use the same "background" technique as in parallax scroll to create an background element that only exists to hold other absolutely positioned elements</p>
+        <p>We can set any "style" we want on a created element by setting css properties on the element.style.propertyName</p>
+        <p>Combine these techniques to add an image to the "background" div when the button is clicked.  Use style.position="absolute" and style.top and style.left to place the new image</p>
+        <p>Bonus points: randomly place the star, note that you can get the size of the background element from the .clientWidth and .clientHeight properties of the element.</p>
+        <button id="theButton">Add Star</button>
+        <a href="reference.html">Peek at an answer</a>
+        <script>
+          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Wish upon a star</title>
+        <style>
+          body {
+            margin: 0;
+            font-family: sans-serif;
+          }
+          input, button {
+            margin: 0.25em;
+            display: block
+          }
+          #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100dvw;
+            height: 100dvh;
+            z-index: -1;
+          }
+          #background img {
+            width: 2em;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="background"></div>
+        <h2>Modifying JavaScript - shortcut</h2>
+        <p>When we create an element in JavaScript, we can hold onto that element in a variable and use it later to directly access the element without having to look it up in the document again.</p>
+        <p>Start from the previous recipe to create stars, but this time randomize the image src to be one of "star-1.png", "star-2.png", "star-3.png"</p>
+        <p>Hold onto each element you create in an array (using array.push)</p>
+        <p>Add code to the twinkle button to loop over the array and revisit each of the created images and reassign the "".src" to a new random value.</p>
+        <p>Pro-tip: Use a function to generate the random image and use it both during the adding of the star and the twinkling of a star.</p>
+        <button onClick="addStar()">Add Star</button>
+        <button onClick="twinkle()">Twinkle</button>
+        <a href="reference.html">Peek at an answer</a>
+        <script>
+          const starz =[]
+
+          function randomStarImage() {
+            // this is a pretty cheezy way to do this... find a tighter way.
+            const randomNumber = Math.random()*3
+            if (randomNumber < 1) return 'star-1.png'
+            if (randomNumber < 2) return 'star-2.png'
+            return 'star-3.png'
+          }
+
+          function addStar() {
+            const background = document.getElementById('background')
+            const star = document.createElement('img')
+            star.style.position = 'absolute'
+            star.style.top = Math.random()*background.clientHeight
+            star.style.left = Math.random()*background.clientWidth
+            star.src=randomStarImage()
+            background.append(star)
+            starz.push(star)  // remember this for later
+          }
+          
+          function twinkle() {
+            starz.forEach(star => {
+              star.src = randomStarImage()
+            })
+          }
+        </script>
+    </body>
+</html>
