@@ -16,10 +16,16 @@
         <h1>Personal, yet detached.</h1>
         <p>When you click this button, use "alert" to say hello to the person named in the text box.  Use the addEventListener method of the button object instead of onclick. </p>
         <input id="name" placeholder="Enter your name" />
-        <button id="button">Say Hello</button>
+        <button id="theButton">Say Hello</button>
         <a href="reference.html">Peek at an answer</a>
+    
         <script>
-
+            function sayHello() {
+                const name = document.getElementById("name").value || "nameless individual";
+                alert("Hello " + name + "!");
+            }
+    
+            document.getElementById("theButton").addEventListener("click", sayHello);
         </script>
     </body>
-</html>
+    </html>
